@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project #04 | Travel-Landing-Page</title>
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Starting the home/header page; -->
+      <header id="home" class="home-page">
+        <nav>
+          <div class="container">
+            <p class="logo">tr<span>avel</span></p>
+            <div class="menu">|||</div>
+            <ul>
+              <li>
+                <a href="#home">home</a>
+              </li>
+              <li>
+                <a href="#about">about</a>
+              </li>
+              <li>
+                <a href="#explore">explore</a>
+              </li>
+              <li>
+                <a href="#blog">blog</a>
+              </li>
+              <li>
+                <a href="#offer">offer</a>
+              </li>
+              <li>
+                <a href="#contact">contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="content">
+          <div class="container">
+            <article>
+              <h1><span>Travel</span> website <span>design </span></h1>
+              <a href="#about">Explore The World With Us</a>
+            </article>
+            <article>
+              <form action="#" method="get" name="check">
+                <div class="divided-three">
+                  <label>
+                    destination
+                    <input name="destination" type="text" />
+                  </label>
+                  <label>
+                    check in
+                    <input name="checkIn" type="date" />
+                  </label>
+                  <label>
+                    check out
+                    <input name="checkOut" type="date" />
+                  </label>
+                </div>
+                <div class="divided-four">
+                  <label>
+                    adult
+                    <input type="text" name="adult" list="adultList" />
+                    <datalist id="adultList">
+                      <option value="1"></option>
+                      <option value="2"></option>
+                      <option value="3"></option>
+                      <option value="4"></option>
+                      <option value="5"></option>
+                      <option value="6"></option>
+                      <option value="7"></option>
+                      <option value="8"></option>
+                      <option value="9"></option>
+                      <option value="10"></option>
+                    </datalist>
+                  </label>
+                  <label>
+                    children
+                    <input type="text" name="children" list="childrenList" />
+                    <datalist id="childrenList">
+                      <option value="1"></option>
+                      <option value="2"></option>
+                      <option value="3"></option>
+                      <option value="4"></option>
+                      <option value="5"></option>
+                      <option value="6"></option>
+                      <option value="7"></option>
+                      <option value="8"></option>
+                      <option value="9"></option>
+                      <option value="10"></option>
+                    </datalist>
+                  </label>
+                  <label>
+                    room
+                    <input type="text" name="room" list="roomlist" />
+                    <datalist id="roomlist">
+                      <option value="1"></option>
+                      <option value="2"></option>
+                      <option value="3"></option>
+                      <option value="4"></option>
+                      <option value="5"></option>
+                      <option value="6"></option>
+                      <option value="7"></option>
+                      <option value="8"></option>
+                      <option value="9"></option>
+                      <option value="10"></option>
+                    </datalist>
+                  </label>
+                  <label>
+                    room type
+                    <select id="select" name="type">
+                      <option value="single">single</option>
+                      <option value="double">double</option>
+                    </select>
+                  </label>
+                </div>
+                <div>
+                  <button>Check Availability</button>
+                </div>
+              </form>
+            </article>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- Starting the about page; -->
+        <section id="about" class="about-page">
+          <h2>About us</h2>
+          <div class="content container divided-two">
+            <article>
+              <h3>flights inside Egypt</h3>
+              <p>
+                Enjoy with us the best trips inside Egypt, book with us now and
+                enjoy offers for tourist trips inside Egypt, spend the best
+                times with us and get the best domestic trip offers, get tourist
+                trips in Egypt at the lowest prices and the best features, get
+                the best discounts when you book domestic tourism offers
+              </p>
+            </article>
+            <article class="slides" style="--current: 1; --count: 3">
+              <img src="./assets/index.svg" alt="arrow-img" class="prev" />
+              <img src="./assets/index.svg" alt="arrow-img" class="next" />
+              <div class="slides-container">
+                <div class="div">
+                  <img src="./assets/travel1.jpg" alt="slide-img" />
+                  <img src="./assets/Alex.jpg" alt="slide-img" />
+                  <img src="./assets/travel1.jpg" alt="slide-img" />
+                </div>
+              </div>
+            </article>
+            <!-- <div class="clear"></div> -->
+          </div>
+        </section>
+        <!-- Starting the explore page; -->
+        <section id="explore" class="explore-page">
+          <h2>Explore</h2>
+          <div class="content container divided-two">
+            <article>
+              <h3>We'll take care of everything :</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim
+                nisi tenetur nesciunt? Rerum, odio voluptatem dolore illum
+                laboriosam earum architecto voluptas fugiat, reiciendis iste
+                perferendis similique, corporis deserunt voluptate asperiores
+                nobis amet repellat cum voluptates consequuntur? Distinctio,
+                tempore harum sed nostrum molestiae voluptatem suscipit
+                corrupti! Facere earum ipsum accusamus.
+              </p>
+            </article>
+            <article>
+              <video src="./assets/v.mp4" controls></video>
+            </article>
+            <!-- <div class="clear"></div> -->
+          </div>
+        </section>
+        <!-- Starting the blog page; -->
+        <section id="blog" class="blog-page">
+          <h2>Blog</h2>
+          <div
+            class="content blog-cards container divided-three figures-container"
+          >
+            <div>
+              <figure>
+                <img src="./assets/North Coast.jpg" alt="blog-img" />
+                <figcaption>
+                  <h5>North Coast</h5>
+                  <p>
+                    Welcome with us on a special trip from the North Coast
+                    trips, you can now enjoy stunning views when you book with
+                    us hotels in the North Coast.
+                  </p>
+                  <a href="#">read more</a>
+                </figcaption>
+              </figure>
+            </div>
+            <div>
+              <figure>
+                <img src="./assets/travel1.jpg" alt="blog-img" />
+                <figcaption>
+                  <h5>North Coast</h5>
+                  <p>
+                    Welcome with us on a special trip from the North Coast
+                    trips, you can now enjoy stunning views when you book with
+                    us hotels in the North Coast.
+                  </p>
+                  <a href="#">read more</a>
+                </figcaption>
+              </figure>
+            </div>
+            <div>
+              <figure>
+                <img src="./assets/travel2.png" alt="blog-img" />
+                <figcaption>
+                  <h5>North Coast</h5>
+                  <p>
+                    Welcome with us on a special trip from the North Coast
+                    trips, you can now enjoy stunning views when you book with
+                    us hotels in the North Coast.
+                  </p>
+                  <a href="#">read more</a>
+                </figcaption>
+              </figure>
+            </div>
+            <div>
+              <figure>
+                <img src="./assets/travel3.jpg" alt="blog-img" />
+                <figcaption>
+                  <h5>North Coast</h5>
+                  <p>
+                    Welcome with us on a special trip from the North Coast
+                    trips, you can now enjoy stunning views when you book with
+                    us hotels in the North Coast.
+                  </p>
+                  <a href="#">read more</a>
+                </figcaption>
+              </figure>
+            </div>
+            <div>
+              <figure>
+                <img src="./assets/travel4.webp" alt="blog-img" />
+                <figcaption>
+                  <h5>North Coast</h5>
+                  <p>
+                    Welcome with us on a special trip from the North Coast
+                    trips, you can now enjoy stunning views when you book with
+                    us hotels in the North Coast.
+                  </p>
+                  <a href="#">read more</a>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <!-- Starting the offer page; -->
+        <section id="offer" class="offer-page">
+          <h2>Offers</h2>
+          <div
+            class="content content-cards container divided-three figures-container"
+          >
+            <div>
+              <figure>
+                <img src="./assets/Alex.jpg" alt="offer-img" />
+                <figcaption>
+                  <h5>Alexandria</h5>
+                  <p>Price : <span>1500 LE</span> 1000 LE</p>
+                  <button>booking</button>
+                </figcaption>
+              </figure>
+            </div>
+            <div>
+              <figure>
+                <img src="./assets/Alex.jpg" alt="offer-img" />
+                <figcaption>
+                  <h5>Alexandria</h5>
+                  <p>Price : <span>1500 LE</span> 1000 LE</p>
+                  <button>booking</button>
+                </figcaption>
+              </figure>
+            </div>
+            <div>
+              <figure>
+                <img src="./assets/Alex.jpg" alt="offer-img" />
+                <figcaption>
+                  <h5>Alexandria</h5>
+                  <p>Price : <span>1500 LE</span> 1000 LE</p>
+                  <button>booking</button>
+                </figcaption>
+              </figure>
+            </div>
+            <div>
+              <figure>
+                <img src="./assets/Alex.jpg" alt="offer-img" />
+                <figcaption>
+                  <h5>Alexandria</h5>
+                  <p>Price : <span>1500 LE</span> 1000 LE</p>
+                  <button>booking</button>
+                </figcaption>
+              </figure>
+            </div>
+            <div>
+              <figure>
+                <img src="./assets/Alex.jpg" alt="offer-img" />
+                <figcaption>
+                  <h5>Alexandria</h5>
+                  <p>Price : <span>1500 LE</span> 1000 LE</p>
+                  <button>booking</button>
+                </figcaption>
+              </figure>
+            </div>
+            <div>
+              <figure>
+                <img src="./assets/Alex.jpg" alt="offer-img" />
+                <figcaption>
+                  <h5>Alexandria</h5>
+                  <p>Price : <span>1500 LE</span> 1000 LE</p>
+                  <button>booking</button>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <!-- Starting the contact page; -->
+        <section id="contact" class="contact-page">
+          <h2>Contact</h2>
+          <div class="content container">
+            <form action="#" method="get" name="contact">
+              <div class="divided-two" style="--gap-x: 2.5%">
+                <input name="name" type="text" placeholder="name" />
+                <input name="email" type="text" placeholder="email" />
+                <!-- <div class="clear"></div> -->
+              </div>
+              <input name="subject" type="text" placeholder="subject" />
+              <textarea name="message" placeholder="the message.."></textarea>
+              <button>send message</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <div class="container divided-two">
+        <p>
+          <i>A floaetd site,</i>
+          <br />
+          made with love <a href="#">&hearts; By legend,</a>
+          <br />
+          asll rights reserved © June 2024;
+        </p>
+        <p style="font-style: italic">
+          The main reference:
+          <br />
+          <a
+            href="https://abdel-rahman-fathy.github.io/Travel-Landing-Page/index.html?city=&check-in=&check-out=&Adult=Adult"
+          >
+            https://abdel-rahman-fathy.github.io/Travel-Landing-Page/index.html?city=&check-in=&check-out=&Adult=Adult
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

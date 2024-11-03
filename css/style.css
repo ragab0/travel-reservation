@@ -1,0 +1,249 @@
+.home-page {
+    position: relative;
+    background-image: url("../assets/1st-section.jpg");
+    background-size: cover;
+    overflow: hidden;
+    padding-block-end: 3rem;
+}
+
+.home-page nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-block: 1rem;
+    background-color: var(--mainColorLight);
+    color: #fff;
+    z-index: 10;
+}
+
+.home-page .logo,
+.home-page .menu,
+.home-page li a {
+    padding: 0.5rem;
+    /* TO make sure they are at the same line.. like align-items center */
+}
+
+.home-page .logo {
+    float: left;
+    text-transform: capitalize;
+    font-weight: 600;
+    transform: scale(2);
+    padding-inline-start: 1.3rem;
+    /* USISNG scale to not change the layout size.. */
+}
+
+.home-page .logo span {
+    color: var(--mainColor);
+}
+
+.home-page .menu,
+.home-page ul {
+    float: right;
+}
+
+.home-page .menu {
+    transform: rotate(90deg) scale(1.2);
+    cursor: pointer;
+    display: none;
+}
+
+.home-page .menu:hover {
+    opacity: 0.8;
+}
+
+.home-page li {
+    float: left;
+}
+
+.home-page li a {
+    padding: 0.5rem;
+    margin-inline: 1rem;
+    display: block;
+    text-transform: capitalize;
+    position: relative;
+    transition: 0.15s;
+}
+
+.home-page li a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    width: 0;
+    opacity: 0.4;
+    background-color: var(--mainColor);
+    transition: 0.4s;
+}
+
+.home-page li a:hover {
+    opacity: 1;
+}
+
+.home-page li a:hover::after {
+    width: 100%;
+}
+
+.home-page article:first-of-type {
+    min-height: 100vh;
+    padding-block: 10rem;
+    text-align: center;
+    color: #fff;
+}
+
+.home-page h1 span:first-of-type {
+    display: block;
+}
+
+.home-page h1 span:last-of-type {
+    color: var(--mainColor);
+}
+
+.home-page h1 + a {
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-transform: capitalize;
+    font-size: 18px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.home-page form {
+    padding: 3rem;
+    background-color: #fff;
+}
+
+.home-page input {
+    margin-block-end: 0;
+}
+
+/* .home-page div > button {text-align: center;} */
+.home-page button {
+    display: block;
+    width: 100%;
+}
+
+/* Starting about-page */
+/* Starting explore-page */
+
+.about-page article:first-of-type,
+.explore-page article:first-of-type {
+    margin-block: 2rem;
+}
+
+.about-page p,
+.explore-page p {
+    line-height: 2rem;
+    margin-top: 1.8rem;
+}
+
+.about-page .slides {
+    position: relative;
+    width: 500px;
+}
+
+.about-page .slides-container {
+    overflow: hidden;
+}
+
+.about-page .slides-container div {
+    display: -webkit-box;
+    transition: 0.3s;
+}
+
+.about-page .prev,
+.about-page .next {
+    width: 75px;
+    height: 75px;
+    padding: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.about-page .prev {
+    left: 0;
+    transform: translateY(-50%) rotate(90deg);
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.about-page .next {
+    right: 0;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.about-page .prev:hover,
+.about-page .next:hover {
+    opacity: 0.5;
+}
+
+/* PROPS NOT SAVED AFTER THE STATUS !! */
+.about-page .next:active ~ .slides-container div {
+    transform: translateX(-510px);
+    /* 500 for the width of the box + 10 for the space between */
+    /* .getBoundingClientRect JS.. COMING SOON ^_^ */
+}
+
+.about-page .slides-container img:not(:last-of-type) {
+    margin-inline-end: 10px;
+}
+
+.about-page .slides-container img,
+.explore-page video {
+    width: 100%;
+    height: 300px;
+    float: left;
+}
+
+/* Starting blog-page */
+.blog-page a {
+    padding-block: 1rem 0.5rem;
+    display: block;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+/* Starting offer-page */
+.offer-page img {
+    padding: 0;
+}
+
+.offer-page p {
+    margin-block: 1rem;
+    font-weight: bold;
+}
+
+.offer-page span {
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+/* Starting footer */
+footer {
+    background-color: var(--clr-darkest);
+    color: #fff;
+    text-align: center;
+    line-height: 1.7;
+    color: #666;
+}
+
+footer p {
+    padding-block: 2rem;
+}
+
+footer p:first-of-type {
+    border-right: 1px solid var(--clr-dark);
+}
+
+footer a {
+    color: var(--mainColor);
+}
